@@ -69,7 +69,6 @@ class m160918_091414_add_busmarks extends Migration
 
     public function safeDown()
     {
-        $this->truncateTable("busmarks");
     }
 
     /*

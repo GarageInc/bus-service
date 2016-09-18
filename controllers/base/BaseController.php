@@ -3,7 +3,9 @@
 namespace app\controllers\base;
 
 
+use app\models\Carriers;
 use app\models\IdentityModel;
+use app\models\Users;
 use yii\filters\ContentNegotiator;
 use yii\filters\Cors;
 use app\models\User;
@@ -16,6 +18,7 @@ use yii\filters\VerbFilter;
 use app\models\ContactForm;
 use yii\web\HttpException;
 use yii\web\Response;
+use app\controllers\base\BaseController;
 
 class BaseController extends Controller
 {
@@ -62,14 +65,27 @@ class BaseController extends Controller
         return $user_id =  Yii::$app->request->post('uid', Yii::$app->request->get('uid', -1));;
     }
 
+    public function getCarrierId(){
+
+        return $user_id =  Yii::$app->request->post('cid', Yii::$app->request->get('cid', -1));;
+    }
+
+
+    public function getPubToken(){
+
+        return $user_id =  Yii::$app->request->post('pub_token', Yii::$app->request->get('pub_token', -1));;
+    }
+
     public function beforeAction($action)
     {
         $user_id =  self::getUserId();
-        $pub_token =  Yii::$app->request->post('pub_token', Yii::$app->request->get('pub_token', -1));
+        $carrier_id =  self::getCarrierId();
+        $pub_token =  self::getPubToken();
 
-        $selectedUser = User::findIdentity( $user_id);
+        $user = Users::findIdentity( $user_id);
+        $carrier = Carriers::findIdentity( $carrier_id);
 
-        if( !$selectedUser || !$selectedUser->validateToken($pub_token))
+        if( !$user || !$user->validateToken($pub_token) || !$user->isBelongToCarrier($carrier))
             throw new ForbiddenHttpException();
         return
             true;

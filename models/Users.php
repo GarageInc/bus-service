@@ -16,7 +16,7 @@ use Yii;
  *
  * @property Buses[] $buses
  */
-class Users extends \yii\db\ActiveRecord
+class Users extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
 {
     /**
      * @inheritdoc
@@ -52,11 +52,57 @@ class Users extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * @return \yii\db\ActiveQuery
-     */
+    public function isBelongToCarrier($carrier){
+        return $carrier->user_id == $this->id;
+    }
+
+    public static function findIdentity($id)
+    {
+        return static::findOne(['id' => $id]);
+    }
+
+    public static function findIdentityByToken($id, $token)
+    {
+        $user = findIdentity($id);
+        return $user->$token == $token;
+    }
+
+    public static function findIdentityByAccessToken($token, $type = null)
+    {
+        return static::findOne(['token' => $token]);
+    }
+    public static function findByUsername($username)
+    {
+        return static::findOne(['username' => $username]);
+    }
+    public function getId()
+    {
+        return $this->getPrimaryKey();
+    }
+    public function getAuthKey()
+    {
+        return $this->auth_key;
+    }
+    public function getToken()
+    {
+        return $this->token;
+    }
+    public function validateToken($token)
+    {
+        return $this->getToken() === $token;
+    }
+    public function validateAuthKey($authKey)
+    {
+        return $this->getAuthKey() === $authKey;
+    }
+    public function validatePassword($password)
+    {
+        return Yii::$app->security->validatePassword($password, $this->password);
+    }
+
     public function getBuses()
     {
         return $this->hasMany(Buses::className(), ['user_id' => 'id']);
     }
+
 }

@@ -40,7 +40,7 @@ class m160918_080324_create_buses_table extends Migration
     {
         $this->dropForeignKey("bus_to_busmark", "buses");
         $this->dropForeignKey("bus_to_carrier", "buses");
-        $this->dropForeignKey("user_to_busmark", "buses");
+        $this->dropForeignKey("bus_to_busmark", "buses");
 
         $this->dropTable('buses');
     }

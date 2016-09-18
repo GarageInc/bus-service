@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\controllers\base\BaseController;
 use Yii;
 use app\models\Carriers;
 use yii\data\ActiveDataProvider;
@@ -12,7 +13,7 @@ use yii\filters\VerbFilter;
 /**
  * CarriersController implements the CRUD actions for Carriers model.
  */
-class CarriersController extends Controller
+class CarriersController extends BaseController
 {
     /**
      * @inheritdoc

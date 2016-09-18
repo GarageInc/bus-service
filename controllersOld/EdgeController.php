@@ -2,7 +2,6 @@
 
 namespace app\controllers;
 
-use app\models\Graph;
 use Yii;
 use app\models\Edge;
 use yii\base\Exception;
