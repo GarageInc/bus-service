@@ -2,25 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bb1e04b-ce9f-4d95-9358-be273c214fb4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/migrations/m160918_164942_create_roles_table.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/UserController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllersOld/base/BaseController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/User.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modelsOld/Edge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modelsOld/Graph.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modelsOld/IdentityModel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modelsOld/Node.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modelsOld/User.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/CarriersController.php" afterPath="$PROJECT_DIR$/controllers/CarriersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/UsersController.php" afterPath="$PROJECT_DIR$/controllers/UsersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/base/BaseController.php" afterPath="$PROJECT_DIR$/controllers/base/BaseController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllersOld/EdgeController.php" afterPath="$PROJECT_DIR$/controllersOld/EdgeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/m160918_075315_create_carriers_table.php" afterPath="$PROJECT_DIR$/migrations/m160918_075315_create_carriers_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/m160918_075336_create_user_table.php" afterPath="$PROJECT_DIR$/migrations/m160918_075336_create_user_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/m160918_080049_create_busmarks_table.php" afterPath="$PROJECT_DIR$/migrations/m160918_080049_create_busmarks_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/m160918_080324_create_buses_table.php" afterPath="$PROJECT_DIR$/migrations/m160918_080324_create_buses_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/m160918_091414_add_busmarks.php" afterPath="$PROJECT_DIR$/migrations/m160918_091414_add_busmarks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Carriers.php" afterPath="$PROJECT_DIR$/models/Carriers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Users.php" afterPath="$PROJECT_DIR$/models/Users.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/m160918_164942_create_roles_table.php" afterPath="$PROJECT_DIR$/migrations/m160918_164942_create_roles_table.php" />
     </list>
     <ignored path="php.sudo-rm-rf.ru.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,57 +29,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="m160918_075336_create_user_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/migrations/m160918_075336_create_user_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="31" column="79" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
-              <folding>
-                <element signature="e#7#28#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Migration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/Migration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
+            <state relative-caret-position="6868">
               <caret line="409" column="20" selection-start-line="409" selection-start-column="20" selection-end-line="409" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="m160918_075315_create_carriers_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/migrations/m160918_075315_create_carriers_table.php">
+      <file leaf-file-name="Command.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/Command.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="48" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="48" />
+            <state relative-caret-position="11424">
+              <caret line="678" column="50" selection-start-line="678" selection-start-column="50" selection-end-line="678" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryBuilder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/QueryBuilder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8211">
+              <caret line="489" column="90" selection-start-line="489" selection-start-column="83" selection-end-line="489" selection-end-column="90" />
               <folding>
-                <element signature="e#7#28#0#PHP" expanded="true" />
+                <marker date="1469813732482" expanded="true" signature="6278:6290" ph="INSERT INTO ${$schema-&gt;quoteTableName($table)}... " />
+                <marker date="1469813732482" expanded="true" signature="8416:8517" ph="INSERT INTO ${$schema-&gt;quoteTableName($table)}... " />
+                <marker date="1469813732482" expanded="true" signature="11183:11195" ph="DELETE FROM " />
+                <marker date="1469813732482" expanded="true" signature="12931:13021" ph="CREATE TABLE... ${$this-&gt;db-&gt;quoteTableName($table)}" />
+                <marker date="1469813732482" expanded="true" signature="13913:13924" ph="DROP TABLE $... " />
+                <marker date="1469813732482" expanded="true" signature="14769:14950" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+                <marker date="1469813732482" expanded="true" signature="15413:15495" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+                <marker date="1469813732482" expanded="true" signature="16731:16845" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+                <marker date="1469813732482" expanded="true" signature="17337:17415" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+                <marker date="1469813732482" expanded="true" signature="18010:18150" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+                <marker date="1469813732482" expanded="true" signature="19066:19239" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+                <marker date="1469813732482" expanded="true" signature="20596:20910" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+                <marker date="1469813732482" expanded="true" signature="21599:21681" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/UsersController.php">
+      <file leaf-file-name="m160918_164942_create_roles_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/migrations/m160918_164942_create_roles_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="27" column="43" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="43" />
-              <folding>
-                <element signature="e#35#75#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="3" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Users.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Users.php">
+      <file leaf-file-name="Buses.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/Buses.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="105" column="5" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
+            <state relative-caret-position="255">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -100,21 +96,19 @@
       <file leaf-file-name="Carriers.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Carriers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-848">
+            <state relative-caret-position="202">
               <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="m160918_164942_create_roles_table.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/migrations/m160918_164942_create_roles_table.php">
+      <file leaf-file-name="Busmarks.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Busmarks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-              <folding>
-                <element signature="e#7#28#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,8 +116,8 @@
       <file leaf-file-name="m160918_080324_create_buses_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/migrations/m160918_080324_create_buses_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
+            <state relative-caret-position="544">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="79" />
               <folding>
                 <element signature="e#7#28#0#PHP" expanded="true" />
               </folding>
@@ -134,10 +128,10 @@
       <file leaf-file-name="m160918_091414_add_busmarks.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/migrations/m160918_091414_add_busmarks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="1139">
+              <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
               <folding>
-                <marker date="1474223939994" expanded="true" signature="1182:1214" ph="INSERT INTO busmarks... " />
+                <marker date="1474316853752" expanded="true" signature="1182:1237" ph="INSERT INTO busmarks... " />
               </folding>
             </state>
           </provider>
@@ -146,8 +140,8 @@
       <file leaf-file-name="m160918_080049_create_busmarks_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/migrations/m160918_080049_create_busmarks_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="289">
+              <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
               <folding>
                 <element signature="e#7#28#0#PHP" expanded="true" />
               </folding>
@@ -189,8 +183,6 @@
         <option value="$PROJECT_DIR$/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/controllers/base/BaseController.php" />
         <option value="$PROJECT_DIR$/controllers/UsersController.php" />
-        <option value="$PROJECT_DIR$/migrations/m160918_091414_add_busmarks.php" />
-        <option value="$PROJECT_DIR$/migrations/m160918_080049_create_busmarks_table.php" />
         <option value="$PROJECT_DIR$/migrations/m_6_create_buses_table.php" />
         <option value="$PROJECT_DIR$/migrations/m_1_create_carriers_table.php" />
         <option value="$PROJECT_DIR$/migrations/m_2_create_roles_table.php" />
@@ -198,10 +190,15 @@
         <option value="$PROJECT_DIR$/migrations/m_4_create_busmarks_table.php" />
         <option value="$PROJECT_DIR$/migrations/m_5_add_busmarks.php" />
         <option value="$PROJECT_DIR$/models/Users.php" />
-        <option value="$PROJECT_DIR$/migrations/m160918_164942_create_roles_table.php" />
         <option value="$PROJECT_DIR$/migrations/m160918_075315_create_carriers_table.php" />
-        <option value="$PROJECT_DIR$/migrations/m160918_080324_create_buses_table.php" />
         <option value="$PROJECT_DIR$/migrations/m160918_075336_create_user_table.php" />
+        <option value="$PROJECT_DIR$/migrations/m160918_080049_create_busmarks_table.php" />
+        <option value="$PROJECT_DIR$/migrations/m160918_080324_create_buses_table.php" />
+        <option value="$PROJECT_DIR$/migrations/m160918_091414_add_busmarks.php" />
+        <option value="$PROJECT_DIR$/migrations/m160918_164942_create_roles_table.php" />
+        <option value="$PROJECT_DIR$/migrations/m160919_203743_create_trips_points_table.php" />
+        <option value="$PROJECT_DIR$/migrations/m160919_203323_create_points_table.php" />
+        <option value="$PROJECT_DIR$/migrations/m160919_202328_create_trips_table.php" />
       </list>
     </option>
   </component>
@@ -217,7 +214,6 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.6" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
     <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
@@ -246,7 +242,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -392,6 +387,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -501,15 +497,17 @@
       <workItem from="1474138544786" duration="757000" />
       <workItem from="1474184239886" duration="8277000" />
       <workItem from="1474215941882" duration="3663000" />
+      <workItem from="1474316273056" duration="1671000" />
+      <workItem from="1474360689338" duration="2323000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66458000" />
+    <option name="totallyTimeSpent" value="70452000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="0" width="1924" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -548,47 +546,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/crypt/RSA.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8721">
-          <caret line="578" column="13" selection-start-line="578" selection-start-column="13" selection-end-line="578" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/site/error.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/openssl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/runtime/logs/API/DEBUG_INFO.log" />
     <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/base/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -596,7 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1564">
           <caret line="104" column="27" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -612,7 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
           <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,7 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,42 +604,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllersOld/base/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modelsOld/Edge.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modelsOld/Graph.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modelsOld/IdentityModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/controllersOld/base/BaseController.php" />
+    <entry file="file://$PROJECT_DIR$/modelsOld/Edge.php" />
+    <entry file="file://$PROJECT_DIR$/modelsOld/Graph.php" />
+    <entry file="file://$PROJECT_DIR$/modelsOld/IdentityModel.php" />
     <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/Connection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -723,7 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -731,55 +661,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Buses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Busmarks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-202">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/models/User.php" />
     <entry file="file://$PROJECT_DIR$/controllersOld/EdgeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modelsOld/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/modelsOld/User.php" />
     <entry file="file://$PROJECT_DIR$/controllersOld/GraphController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
           <caret line="51" column="72" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -787,25 +684,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="50" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-559">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/UserController.php" />
     <entry file="file://$PROJECT_DIR$/controllers/CarriersController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-306">
           <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding>
-            <element signature="e#35#75#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -813,70 +699,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-          <folding>
-            <element signature="e#41#65#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="357">
           <caret line="27" column="43" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="43" />
           <folding>
-            <element signature="e#35#75#0#PHP" expanded="true" />
+            <element signature="e#35#75#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/Migration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="409" column="20" selection-start-line="409" selection-start-column="20" selection-end-line="409" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/Users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
+        <state relative-caret-position="1785">
           <caret line="105" column="5" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Carriers.php">
+    <entry file="file://$PROJECT_DIR$/migrations/m160918_075315_create_carriers_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-848">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="323">
+          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="21" selection-end-column="63" />
+          <folding>
+            <element signature="e#7#28#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/m160918_091414_add_busmarks.php">
+    <entry file="file://$PROJECT_DIR$/migrations/m160918_075336_create_user_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <marker date="1474223939994" expanded="true" signature="1182:1214" ph="INSERT INTO busmarks... " />
-          </folding>
+        <state relative-caret-position="257">
+          <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/migrations/m160918_080049_create_busmarks_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/m160918_075315_create_carriers_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="48" />
+        <state relative-caret-position="289">
+          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
           <folding>
             <element signature="e#7#28#0#PHP" expanded="true" />
           </folding>
@@ -885,18 +749,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/migrations/m160918_080324_create_buses_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
+        <state relative-caret-position="544">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="79" />
           <folding>
             <element signature="e#7#28#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/m160918_075336_create_user_table.php">
+    <entry file="file://$PROJECT_DIR$/migrations/m160918_091414_add_busmarks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="79" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
+        <state relative-caret-position="1139">
+          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+          <folding>
+            <marker date="1474316853752" expanded="true" signature="1182:1237" ph="INSERT INTO busmarks... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/QueryBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8211">
+          <caret line="489" column="90" selection-start-line="489" selection-start-column="83" selection-end-line="489" selection-end-column="90" />
+          <folding>
+            <marker date="1469813732482" expanded="true" signature="6278:6290" ph="INSERT INTO ${$schema-&gt;quoteTableName($table)}... " />
+            <marker date="1469813732482" expanded="true" signature="8416:8517" ph="INSERT INTO ${$schema-&gt;quoteTableName($table)}... " />
+            <marker date="1469813732482" expanded="true" signature="11183:11195" ph="DELETE FROM " />
+            <marker date="1469813732482" expanded="true" signature="12931:13021" ph="CREATE TABLE... ${$this-&gt;db-&gt;quoteTableName($table)}" />
+            <marker date="1469813732482" expanded="true" signature="13913:13924" ph="DROP TABLE $... " />
+            <marker date="1469813732482" expanded="true" signature="14769:14950" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+            <marker date="1469813732482" expanded="true" signature="15413:15495" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+            <marker date="1469813732482" expanded="true" signature="16731:16845" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+            <marker date="1469813732482" expanded="true" signature="17337:17415" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+            <marker date="1469813732482" expanded="true" signature="18010:18150" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+            <marker date="1469813732482" expanded="true" signature="19066:19239" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+            <marker date="1469813732482" expanded="true" signature="20596:20910" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+            <marker date="1469813732482" expanded="true" signature="21599:21681" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11424">
+          <caret line="678" column="50" selection-start-line="678" selection-start-column="50" selection-end-line="678" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/Migration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6868">
+          <caret line="409" column="20" selection-start-line="409" selection-start-column="20" selection-end-line="409" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/m160919_203323_create_points_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="18" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#7#28#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/m160919_203743_create_trips_points_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="e#7#28#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/m160919_202328_create_trips_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
           <folding>
             <element signature="e#7#28#0#PHP" expanded="true" />
           </folding>
@@ -905,11 +837,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/migrations/m160918_164942_create_roles_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Carriers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Busmarks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Buses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

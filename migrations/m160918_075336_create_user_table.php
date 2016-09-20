@@ -26,6 +26,7 @@ class m160918_075336_create_user_table extends Migration
             'password' => Schema::TYPE_STRING . ' NOT NULL',
             'auth_key' => Schema::TYPE_STRING . ' NOT NULL',
             'token' => Schema::TYPE_STRING . ' NOT NULL',
+            'is_deleted' => Schema::TYPE_BOOLEAN . ' NOT NULL',
         ], $tableOptions);
 
 

@@ -16,6 +16,7 @@ class m160918_080049_create_busmarks_table extends Migration
         $this->createTable('busmarks', [
             'id' => $this->primaryKey(3),
             'markname' =>  Schema::TYPE_STRING . ' NOT NULL',
+            'is_deleted' => Schema::TYPE_BOOLEAN . ' NOT NULL',
         ]);
     }
 

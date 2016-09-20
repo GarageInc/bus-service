@@ -12,7 +12,8 @@ class m160918_164942_create_roles_table extends Migration
     {
         $this->createTable('roles', [
             'id' => $this->primaryKey(3),
-            'rolename' =>  Schema::TYPE_STRING . ' NOT NULL'
+            'rolename' =>  Schema::TYPE_STRING . ' NOT NULL',
+            'is_deleted' => Schema::TYPE_BOOLEAN . ' NOT NULL',
         ]);
 
         $this->addForeignKey("user_to_role", "users", "role_id", "roles", "id");

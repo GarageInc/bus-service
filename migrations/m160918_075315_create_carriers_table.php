@@ -19,6 +19,7 @@ class m160918_075315_create_carriers_table extends Migration
             'password' => Schema::TYPE_STRING . ' NOT NULL',
             'auth_key' => Schema::TYPE_STRING . ' NOT NULL',
             'token' => Schema::TYPE_STRING . ' NOT NULL',
+            'is_deleted' => Schema::TYPE_BOOLEAN . ' NOT NULL',
         ]);
     }
 

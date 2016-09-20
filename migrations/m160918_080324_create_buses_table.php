@@ -29,6 +29,7 @@ class m160918_080324_create_buses_table extends Migration
             'has_restroom' => Schema::TYPE_BOOLEAN. ' NOT NULL',
 
             'number_of_storeys' => Schema::TYPE_INTEGER. ' NOT NULL',
+            'is_deleted' => Schema::TYPE_BOOLEAN . ' NOT NULL',
         ]);
 
         $this->addForeignKey("bus_to_user", "buses", "user_id", "users", "id");

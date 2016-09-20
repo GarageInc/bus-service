@@ -63,7 +63,7 @@ class m160918_091414_add_busmarks extends Migration
     public function safeUp()
     {
         foreach (self::$buses as $bus) {
-            $this->insert("busmarks", [ "markname" => $bus]);
+            $this->insert("busmarks", [ "markname" => $bus, "is_deleted" => false]);
         }
     }
 
